@@ -1,0 +1,57 @@
+/* Reset */
+body {
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 3fr 1fr;  
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-areas:
+    "header header"
+    "nav    nav"
+    "main   aside"
+    "footer footer";
+
+}
+
+/* Assign each section */
+header {
+  grid-area: header;
+  background: goldenrod;
+  color: white;
+  padding: 10px;
+}
+
+nav {
+  grid-area: nav;
+  background: darkgoldenrod;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+main {
+  grid-area: main;
+  background: lightgoldenrodyellow;
+  padding: 20px;
+}
+
+aside {
+  grid-area: aside;
+  background: gainsboro;
+  padding: 20px;
+}
+
+footer {
+  grid-area: footer;
+  background: goldenrod;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Nav links */
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 15px;
+}
