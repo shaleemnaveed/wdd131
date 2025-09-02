@@ -15,6 +15,7 @@ header {
     background: #087E8B;
     color: white;
     text-align: center;
+    font-family: "Open Sans", sans-serif;
 }
 
 header span {
@@ -51,12 +52,13 @@ main {
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 20px;
+    font-family: "Roboto", sans-serif;;
 }
 
 main h1 {
     position: absolute;
     z-index: 1;
-    top: 380px;
+    top: 370px;
     left: 450px;
     text-decoration: dotted;
     color: black;
@@ -92,7 +94,7 @@ main h1 {
 .card p {
     font-size: 17px;
     line-height: 1.75;
-    padding: 0 10px;
+    padding: 0 15px;
     max-width: 70%;
 }
 
@@ -124,6 +126,7 @@ footer {
     background: #087E8B;
     color: white;
     text-align: center;
+    font-family: "Open Sans", sans-serif;
 }
 
 footer p {
