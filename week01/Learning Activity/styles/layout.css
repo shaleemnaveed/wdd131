@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 3fr 1fr;  
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header header"
+    "main   aside"
+    "footer footer";
+
+}
+
+header {
+  grid-area: header;
+  background: goldenrod;
+  color: white;
+}
+
+nav {
+  background: darkgoldenrod;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  grid-area: main;
+  background: lightgoldenrodyellow;
+}
+
+aside {
+  grid-area: aside;
+  background: gainsboro;
+}
+
+footer {
+  grid-area: footer;
+  background: goldenrod;
+  color: white;
+  text-align: center;
+}
