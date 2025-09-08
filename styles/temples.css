@@ -55,11 +55,12 @@ main {
     margin: 0 auto;
 }
 
-main h1 {
+main h2 {
     text-align: center;
-    color: var(--background-color);
+    color: var(--text-color);
     margin: 50px;
     background-color: var(--background-color);
+    padding: 10px;
 }
 
 section {
