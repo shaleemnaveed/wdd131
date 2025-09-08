@@ -1,3 +1,9 @@
+:root {
+    --background-color: #3A606E;
+    --text-color: white;
+    --hover-color: #333;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,16 +14,16 @@
 header {
     display: grid;
     grid-template-columns: 1fr auto;
-    background-color: #3A606E;
-    color: white;
+    background-color: var(--background-color);
+    color: var(--text-color);
     padding: 10px;
 }
 
-nav ul{
+nav ul {
     display: none;
 }
 
-nav ul.show{
+nav ul.show {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -25,22 +31,22 @@ nav ul.show{
     margin-top: 20px;
 }
 
-a{
+a {
     text-decoration: none;
-    color: white;
+    color: var(--text-color);
     font-weight: bold;
     font-size: 20px;
 }
 
-a:hover{
-    color: #333;
+a:hover {
+    color: var(--hover-color);
 }
 
 #hamburger {
     font-size: 24px;
     background: none;
     border: none;
-    color: white;
+    color: var(--text-color);
     cursor: pointer;
 }
 
@@ -51,9 +57,9 @@ main {
 
 main h1 {
     text-align: center;
-    color: white;
+    color: var(--background-color);
     margin: 50px;
-    background-color: #3A606E;
+    background-color: var(--background-color);
 }
 
 section {
@@ -63,18 +69,18 @@ section {
     gap: 50px;
 }
 
-img{
+img {
     width: 100%;
     padding: 10px;
 }
 
-figcaption{
+figcaption {
     font-weight: bold;
 }
 
 footer {
-    background-color: #3A606E;
-    color: white;
+    background-color: var(--background-color);
+    color: var(--text-color);
     text-align: center;
     padding: 10px;
     bottom: 0;
