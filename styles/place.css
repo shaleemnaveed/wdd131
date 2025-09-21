@@ -1,3 +1,33 @@
+:root {
+    /* Colors */
+    --color-primary: #2B2D42;
+    --color-secondary: #EDF2F4;
+    --color-bg: #EDF2F4;
+
+    /* Fonts */
+    --font-header: "Open Sans", sans-serif;
+    --font-body: "Roboto", sans-serif;
+
+    /* Font Sizes */
+    --font-size-base: 20px;
+    --font-size-heading: 30px;
+    --font-size-title: 48px;
+
+    /* Line Heights */
+    --line-height-base: 2;
+    --line-height-footer: 1.5;
+
+    /* Spacing */
+    --spacing-small: 4px;
+    --spacing-medium: 10px;
+    --spacing-large: 20px;
+    --spacing-xlarge: 15px;
+
+    /* Other */
+    --font-weight-bold: 800;
+    --font-weight-light: lighter;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,23 +36,32 @@
 
 header,
 footer {
-    background-color: #2B2D42;
-    color: #EDF2F4;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20px;
-    line-height: 2;
+    font-family: var(--font-header);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
     font-style: bold;
 }
 
+header h1 {
+    font-size: var(--font-size-title);
+}
+
+header div {
+    background-color: var(--color-secondary);
+    padding: var(--spacing-medium);
+}
+
 body {
-    background-color: #EDF2F4;
+    background-color: var(--color-bg);
 }
 
 main {
     max-width: 800px;
     text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: var(--font-body);
 }
 
 #hero img {
@@ -31,18 +70,27 @@ main {
     display: block;
 }
 
+#empty {
+    background-color: var(--color-primary);
+    padding: var(--spacing-small);
+}
+
 #data,
 #weather {
-    margin: 20px;
-    line-height: 2;
+    margin: var(--spacing-large);
+    line-height: var(--line-height-base);
 }
 
 .headings {
-    font-size: 30px;
+    font-size: var(--font-size-heading);
 }
 
 ul {
     list-style: none;
+}
+
+#data-ul {
+    padding-top: var(--spacing-xlarge);
 }
 
 li {
@@ -60,4 +108,16 @@ li span:nth-child(1) {
 li span:nth-child(2) {
     grid-column: 2;
     text-align: left;
+}
+
+#temp,
+#speed {
+    display: inline;
+    font-weight: var(--font-weight-light);
+}
+
+footer {
+    line-height: var(--line-height-footer);
+    padding: var(--spacing-medium);
+    font-weight: var(--font-weight-bold);
 }

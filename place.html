@@ -7,6 +7,12 @@
     <meta name="author" content="Shaleem Naveed">
     <meta name="description" content="he subject of the page is a country or place where I wish to visit.">
     <title>Country Page</title>
+    <!-- Fonts: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <!-- Stylesheets: -->
     <link rel="stylesheet" href="styles/place.css">
     <link rel="stylesheet" href="styles/place-large.css">
@@ -17,18 +23,18 @@
 
 <body>
     <header>
-        <h1 style="font-size: 48px;">China</h1>
-        <div style="background-color: #EDF2F4; padding: 10px;"></div>
+        <h1>China</h1>
+        <div></div>
     </header>
     <main>
         <picture id="hero">
             <source media="(max-width: 800px)" srcset="images/chongqing-mobile.webp">
             <img src="images/chongqing.webp" alt="China's City">
         </picture>
-        <div id="empty" style="background-color: #2B2D42; padding: 4px;"></div>
+        <div id="empty"></div>
         <div id="data">
             <h2 class="headings" id="data-heading">Data</h2>
-            <ul style="padding-top: 15px;">
+            <ul id="data-ul">
                 <li><span>Area:</span> <span>9,596,961 sq km</span></li>
                 <li><span>Population:</span> <span>1,425,000,000</span></li>
                 <li><span>Capital:</span> <span>Beijing</span></li>
@@ -49,17 +55,17 @@
             </div>
             <ul>
                 <li><span>Temperature:</span> <span>
-                        <span id="temp" style="display: inline; font-weight: lighter;">25</span> °C
+                        <span id="temp">25</span> °C
                     </span></li>
                 <li><span>Conditions:</span> <span>Cloudy</span></li>
                 <li><span>Wind:</span> <span>
-                        <span id="speed" style="display: inline; font-weight: lighter;">11</span> km/h
+                        <span id="speed">11</span> km/h
                     </span></li>
                 <li><span>Wind Chill:</span> <span id="windchill"></span></li>
             </ul>
         </div>
     </main>
-    <footer style="line-height: 1.5; padding: 10px; font-weight: 800;">
+    <footer>
         <p>@<span id="currentyear"></span> | Shaleem Naveed | Pakistan</p>
         <p id="lastModified"></p>
     </footer>
