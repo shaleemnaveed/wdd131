@@ -1,14 +1,11 @@
 @media screen and (min-width: 800px) {
     main {
         max-width: none;
+        position: relative;
     }
 
     #empty {
         display: none;
-    }
-
-    #hero img {
-        position: relative;
     }
 
     #data,
@@ -18,14 +15,14 @@
     }
 
     #data {
-        top: 20%;
-        left: 3%;
+        top: 0%;
+        left: 0%;
         padding: 20px;
     }
 
     #weather {
-        top: 75%;
-        left: 75%;
+        bottom: 0%;
+        right: 0%;
         padding: 20px;
     }
 
