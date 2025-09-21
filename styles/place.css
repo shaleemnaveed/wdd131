@@ -42,7 +42,7 @@ footer {
     font-family: var(--font-header);
     font-size: var(--font-size-base);
     line-height: var(--line-height-base);
-    font-style: bold;
+    font-weight: bold;
 }
 
 header h1 {
