@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Shaleem Naveed">
+    <meta name="description" content="he subject of the page is a country or place where I wish to visit.">
+    <title>Country Page</title>
+    <!-- Stylesheets: -->
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <!-- Scripts: -->
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1 style="font-size: 48px;">China</h1>
+        <div style="background-color: #EDF2F4; padding: 10px;"></div>
+    </header>
+    <main>
+        <picture id="hero">
+            <source media="(max-width: 800px)" srcset="images/chongqing-mobile.webp">
+            <img src="images/chongqing.webp" alt="China's City">
+        </picture>
+        <div id="empty" style="background-color: #2B2D42; padding: 4px;"></div>
+        <div id="data">
+            <h2 class="headings" id="data-heading">Data</h2>
+            <ul style="padding-top: 15px;">
+                <li><span>Area:</span> <span>9,596,961 sq km</span></li>
+                <li><span>Population:</span> <span>1,425,000,000</span></li>
+                <li><span>Capital:</span> <span>Beijing</span></li>
+                <li><span>Languages:</span> <span>Standard Mandarin</span></li>
+                <li><span>Currency:</span> <span>Renminbi</span></li>
+                <li><span>Time Zone:</span> <span>UTC+8</span></li>
+                <li><span>Calling Code:</span> <span>+86</span></li>
+                <li><span>Internet TLD:</span> <span>.cn</span></li>
+            </ul>
+        </div>
+        <div id="weather">
+            <div id="weather-heading">
+                <h2 class="headings">Weather</h2>
+                <picture>
+                    <source media="(max-width: 800px)" srcset="images/weather-mobile.svg">
+                    <img src="images/weather.svg" alt="Cloudy Weather">
+                </picture>
+            </div>
+            <ul>
+                <li><span>Temperature:</span> <span>
+                        <p id="temp" style="display: inline;">25</p> °C
+                    </span></li>
+                <li><span>Conditions:</span> <span>Cloudy</span></li>
+                <li><span>Wind:</span> <span>
+                        <p id="speed" style="display: inline;">11</p> km/h
+                    </span></li>
+                <li><span>Wind Chill:</span> <span id="windchill"></span></li>
+            </ul>
+        </div>
+    </main>
+    <footer style="line-height: 1.5; padding: 10px; font-weight: 800;">
+        <p>@<span id="currentyear"></span> | Shaleem Naveed | Pakistan</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

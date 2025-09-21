@@ -1,0 +1,51 @@
+@media screen and (min-width: 800px) {
+    main {
+        max-width: none;
+    }
+
+    #empty {
+        display: none;
+    }
+
+    #hero img {
+        position: relative;
+    }
+
+    #data,
+    #weather {
+        position: absolute;
+        background-color: rgba(237, 242, 244, 0.7);
+    }
+
+    #data {
+        top: 20%;
+        left: 3%;
+        padding: 20px;
+    }
+
+    #weather {
+        top: 75%;
+        left: 75%;
+        padding: 20px;
+    }
+
+    #weather ul {
+        padding-top: 15px;
+    }
+
+    #data-heading {
+        background-color: #2B2D42;
+        color: #EDF2F4;
+        padding: 10px;
+    }
+
+    #weather-heading {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background-color: #2B2D42;
+        color: #EDF2F4;
+        padding: 10px 0px 10px 20px;
+    }
+
+}
