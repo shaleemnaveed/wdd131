@@ -1,0 +1,49 @@
+:root {
+    --header-columns-lg: 1fr 1fr;
+    --nav-padding-lg: 10px;
+    --main-padding-lg: 20px;
+    --section-columns-lg: 1fr 1fr 1fr;
+    --name-font-lg: 30px;
+    --list-font-lg: 18px;
+    --info-font-lg: 15px;
+}
+
+@media screen and (min-width: 800px) {
+    header {
+        grid-template-columns: var(--header-columns-lg);
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    nav ul {
+        display: flex !important;
+        padding: var(--nav-padding-lg);
+        justify-content: space-evenly;
+        list-style-type: none;
+    }
+
+    main {
+        max-width: none;
+        padding: var(--main-padding-lg);
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: var(--section-columns-lg);
+        padding: 0;
+    }
+
+    .name {
+        font-size: var(--name-font-lg);
+    }
+
+    .list {
+        font-size: var(--list-font-lg);
+    }
+
+    .info {
+        font-size: var(--info-font-lg);
+    }
+}
