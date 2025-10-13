@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Shaleem Naveed">
+    <meta name="description" content="Home page of Limes 101">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@800..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/home.css">
+    </link>
+
+    <script src="scripts/project.js" defer></script>
+
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <h1>Limes 101</h1>
+        <button id="hamburger">☰</button>
+        <nav>
+            <ul id="nav">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="facts.html">Fun Facts</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <picture id="hero">
+            <source media="(max-width: 800px)" srcset="images/mobile-hero.webp" loading="lazy">
+            <img src="images/desktop-hero.webp" alt="Main image of limes" loading="lazy">
+        </picture>
+        <div id="empty"></div>
+        <p id="intro">Limes are small, green citrus fruits. They belong to the same family as lemons. Lime 101 is your
+            guide to start exploring these mouth-puckering fruits.</p>
+        <section id="sections">
+            <div id="history">
+                <p id="p1">Limes have a long and flaourful history that stretches bak thousands of years. Originally
+                    believed to have grown in Southeast Asia, once carried on long voyages, from tropical islands to
+                    modern kitchens everywhere.</p>
+                <a href="history.html">
+                    <button class="button" role="button">Learn History ➤</button>
+                </a>
+            </div>
+            <div id="fun-facts">
+                <p id="p2">Limes aren't just tasty, they're full of surprises. Did you know limes glow under UV light or
+                    that they were once so valuable sailors were nicknamed "limeys"?</p>
+                <a href="facts.html">
+                    <button class="button" role="button">Discover Facts ➤</button>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> | Shaleem Naveed | Pakistan</p>
+        <p id="lastmodified"></p>
+        <a id="refer" href="references.html">references used</a>
+    </footer>
+</body>
+
+</html>

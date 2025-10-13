@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Shaleem Naveed">
+    <meta name="description" content="Contact page of Limes 101">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@800..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/contact.css">
+    </link>
+
+    <script src="scripts/project.js" defer></script>
+    <script src="scripts/contact.js" defer></script>
+
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <header>
+        <h1>Limes 101</h1>
+        <button id="hamburger">☰</button>
+        <nav>
+            <ul id="nav">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="facts.html">Fun Facts</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="feedback-section">
+        <h2>Share Your Thoughts</h2>
+        <p>We’d love to hear your feedback</p>
+
+        <form id="feedbackForm" action="review.html" method="get">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+
+            <label for="review">Your Review</label>
+            <textarea id="review" name="review" rows="4" placeholder="Write your review here" required></textarea>
+
+            <label for="suggestions">Suggestions</label>
+            <textarea id="suggestions" name="suggestions" rows="3"
+                placeholder="Any suggestions for improvement?"></textarea>
+
+            <label>Rate Our Site</label>
+            <div class="stars">
+                <input type="radio" name="rating" id="star5" value="5"><label for="star5">★</label>
+                <input type="radio" name="rating" id="star4" value="4"><label for="star4">★</label>
+                <input type="radio" name="rating" id="star3" value="3"><label for="star3">★</label>
+                <input type="radio" name="rating" id="star2" value="2"><label for="star2">★</label>
+                <input type="radio" name="rating" id="star1" value="1"><label for="star1">★</label>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>©<span id="currentyear"></span> | Shaleem Naveed | Pakistan</p>
+        <p id="lastmodified"></p>
+        <a id="refer" href="references.html">references used</a>
+    </footer>
+</body>
+
+</html>
